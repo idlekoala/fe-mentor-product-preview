@@ -1,0 +1,79 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#content {
+    padding: 2em;
+}
+#whitebox {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 66ch;
+    display: grid;
+    border-radius: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+h1 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    gap: 1em;
+    border-color: hsl(158, 36%, 37%);
+    box-shadow: none;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 1em clamp(1em, 5vw, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#discounted {
+    color: hsl(158, 36%, 37%);
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+@media (max-width:600px) {
+    #whitebox {
+        display: block;
+        max-width: 40ch;
+    }
+    img {
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 0;
+}
+}
